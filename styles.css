@@ -8,7 +8,7 @@ aside {
   margin-left: 15px;
   float: right;
   font-style: normal;
-  background-color: lightgray;
+  background-color: rgb(206, 202, 202, 0.6);
   color: red;
   font-weight: bold;
 }
@@ -30,6 +30,7 @@ img {
 body {
   height: 125vh;
   background-image: url("https://stadiumjourney.com/wp-content/uploads/2019/08/Screen-Shot-2019-08-18-at-10.45.27-AM.png");
+  background-attachment: scroll;
   background-size: cover;
   font-family: sans-serif;
   color: red;
@@ -63,26 +64,18 @@ header li a {
   text-decoration: none;
 }
 main article {
-  text-align: center;
-  background: darkblue;
+  background: rgb(0, 0, 139, 0.6);
+  column-width: 10em;
+  column-count: 3;
+  column-fill: balance;
 }
-main .one {
-  text-align: left;
+h3 {
+  margin-top: 0px;
 }
-main .one a {
-  text-align: left;
+main article ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-main .two {
-  text-align: center;
-}
-main .two a {
-  text-align: center;
-}
-main .three {
-  text-align: right;
-  margin: 20px;
-}
-main .three a {
-  text-align: right;
-  margin: 20px;
+main article ul li a {
+  text-decoration: none;
 }
