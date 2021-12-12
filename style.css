@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Source Serif Pro", serif;
+  --ff-secondary: "Domine", serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #2022ca;
+
+  --fs-h2: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 2.25rem;
+  --fs-body: 2rem;
+
+  --bs: 0.5em 0.45em 2em rgba(0, 0, 0, 0.25),
+    0.25em 0.25em 0.5em rgba(0, 0, 0, 0.225);
+}
+
+/* Header */
+
+.logo {
+  max-width: 150px;
+}
+.navbar {
+  background-color: var(--clr-light);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 2rem;
+  color: red;
+  box-shadow: rgba(20, 20, 40, 0.225);
+}
+
+.navbar-items {
+  list-style-type: none;
+  float: right;
+  margin-top: 30px;
+}
+
+.navbar-items li {
+  display: inline;
+  color: var(--clr-light);
+}
+
+.navbar-item {
+  color: var(--clr-dark);
+  padding: 2.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.main-title {
+  text-align: center;
+  font-family: var(--ff-secondary);
+}
+
+.title-description {
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+}
+
+/* body */
+
+.main h2 {
+  text-align: center;
+}
+
+/* grid */
+.league-section-one {
+  grid-area: "section-one";
+  list-style-type: none;
+}
+
+.league-section-two {
+  grid-area: "section-two";
+  list-style-type: none;
+}
+
+.league-section-three {
+  grid-area: "section-three";
+  list-style-type: none;
+}
+
+.quiz-section {
+  list-style-type: none;
+  grid-area: "quiz-section";
+}
+
+.league-sections {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "section-one section-two section-three quiz-section"
+    "section-one section-two section-three quiz-section"
+    "section-one section-two section-three quiz-section";
+}
+
+/* links */
+
+.league-section-item,
+.quiz-item {
+  text-decoration: none;
+  padding: 1rem;
+  gap: 2rem;
+}

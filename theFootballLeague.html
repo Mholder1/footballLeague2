@@ -1,65 +1,71 @@
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Football League</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&family=Source+Serif+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <nav>
-        <img src="/Images/EFL.jpg" alt="An image of the football league logo" />
-        <ul class="toast">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Sign up</a></li>
+      <nav class="navbar">
+        <img
+          class="logo"
+          src="/Images/EFL.jpg"
+          alt="An image of the football league logo"
+        />
+        <ul class="navbar-items">
+          <li><a class="navbar-item" href="#">Home</a></li>
+          <li><a class="navbar-item" href="#">Contact us</a></li>
+          <li><a class="navbar-item" href="#">Twitter</a></li>
+          <li><a class="navbar-item" href="#">Sign up</a></li>
         </ul>
       </nav>
     </header>
 
-    <h1>The 2021 Football League</h1>
+    <h1 class="main-title">The 2021 Football League</h1>
 
-    <p>
+    <p class="title-description">
       A review of all of the highlights, best performers and top stories during
       the 2020/21 football league
     </p>
 
-    <main>
+    <main class="main">
       <h2>Football Leagues</h2>
-      <article>
-        <h3>Championship</h3>
-
-        <ul>
-          <li><a href="#">In form players</a></li>
-          <li><a href="#">Best matches</a></li>
-          <li><a href="#">Top stories</a></li>
+      <div class="league-sections">
+        <ul class="league-section-one">
+          <h3>Championship</h3>
+          <li><a class="league-section-item" href="#">In form players</a></li>
+          <li><a class="league-section-item" href="#">Best matches</a></li>
+          <li><a class="league-section-item" href="#">Top stories</a></li>
         </ul>
-        <h3>League One</h3>
 
-        <ul>
-          <li><a href="#">In form players</a></li>
-          <li><a href="#">Best matches</a></li>
-          <li><a href="#">Top stories</a></li>
+        <ul class="league-section-two">
+          <h3>League One</h3>
+          <li><a class="league-section-item" href="#">In form players</a></li>
+          <li><a class="league-section-item" href="#">Best matches</a></li>
+          <li><a class="league-section-item" href="#">Top stories</a></li>
         </ul>
-        <h3 class="three">League Two</h3>
 
-        <ul>
-          <li><a href="#">In form players</a></li>
-          <li><a href="#">Best matches</a></li>
-          <li><a href="#">Top stories</a></li>
+        <ul class="league-section-three">
+          <h3 class="three">League Two</h3>
+          <li><a class="league-section-item" href="#">In form players</a></li>
+          <li><a class="league-section-item" href="#">Best matches</a></li>
+          <li><a class="league-section-item" href="#">Top stories</a></li>
         </ul>
-      </article>
 
-      <aside>
-        <h2>Games</h2>
-
-        <ul>
-          <li><a href="#">The Football League Quiz</a></li>
+        <ul class="quiz-section">
+          <h2>Games</h2>
+          <li><a class="quiz-item" href="#">The Football League Quiz</a></li>
         </ul>
-      </aside>
+      </div>
     </main>
   </body>
 </html>
